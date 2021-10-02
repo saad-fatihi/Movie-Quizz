@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Button } from "../../atoms/Button";
+import { LinkButton } from "../../atoms/LinkButton";
 
 export const Container = styled.div`
   padding: 20px;
@@ -19,6 +19,6 @@ export const Description = styled.p`
   text-align: center;
 `;
 
-export const PlayButton = styled(Button)`
+export const PlayButton = styled(LinkButton)`
   background: #7059ff;
 `;
