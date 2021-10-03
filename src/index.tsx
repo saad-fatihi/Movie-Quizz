@@ -1,14 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
+
 import { App } from "./components/App";
 import reportWebVitals from "./reportWebVitals";
 import GlobalStyle from "./GlobalStyle";
 
+const client = new ApolloClient({
+  uri: "https://tmdb.apps.quintero.io",
+  cache: new InMemoryCache(),
+});
+
 ReactDOM.render(
-  <React.StrictMode>
+  <ApolloProvider client={client}>
     <App />
     <GlobalStyle />
-  </React.StrictMode>,
+  </ApolloProvider>,
   document.getElementById("root")
 );
 

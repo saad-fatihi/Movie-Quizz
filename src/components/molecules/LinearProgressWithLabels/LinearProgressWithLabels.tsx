@@ -25,8 +25,12 @@ const LinearProgressWithLabels = (props: LinearProgressWithLabelsProps) => {
           {`${props.time} s`}
         </Typography>
       </Box>
-      <Box sx={{ width: "70%", mr: 1 }}>
-        <LinearProgress variant="determinate" {...props} />
+      <Box sx={{ width: "70%", mr: 1, margin: "10px" }}>
+        <LinearProgress
+          variant="determinate"
+          {...props}
+          value={props.value * 10}
+        />
       </Box>
       <Box sx={{ minWidth: 35 }}>
         <Typography variant="body2" color="text.secondary">
