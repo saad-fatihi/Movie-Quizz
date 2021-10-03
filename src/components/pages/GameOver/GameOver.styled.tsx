@@ -40,10 +40,19 @@ export const NameInput = styled.input`
   box-sizing: border-box;
   border-radius: 12px;
   margin: 30px 0;
+  padding: 0 20px;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  color: #000000;
   flex: 1;
 `;
 
 export const AddButton = styled(Button)`
   background: #7059ff;
   margin: 30px 0 30px 30px;
+
+  &:disabled {
+    background: #8f85c0;
+  }
 `;
