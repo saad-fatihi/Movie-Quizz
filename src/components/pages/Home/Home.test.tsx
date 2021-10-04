@@ -2,9 +2,11 @@ import { render, screen } from "../../../test/test-utils";
 import Home from "./Home";
 
 describe("Home", () => {
+  beforeEach(() => {
+    jest.resetAllMocks();
+  });
   it("should render without crashing", () => {
     render(<Home />);
-    screen.debug();
   });
   it("should a Title", () => {
     render(<Home />);
@@ -21,6 +23,7 @@ describe("Home", () => {
   it("should a Link", () => {
     render(<Home />);
     const link = screen.getByRole("link");
+    expect(link).toHaveAttribute("href", "/survey");
     expect(link.textContent).toBe("Press play and let’s go");
   });
 });

@@ -26,16 +26,21 @@ const GameOver = () => {
           <Title>{result.score === 10 ? "Well done" : "Game over"}</Title>
           <ScoreContainer>
             <Label>Time spent in the game</Label>
-            <Label>{`${result.seconds} s`}</Label>
+            <Label data-testid="over-seconds">{`${result.seconds} s`}</Label>
           </ScoreContainer>
           <ScoreContainer>
             <Label>Good answers</Label>
-            <Label>{`${result.score} good answer(s)`}</Label>
+            <Label data-testid="over-score">{`${result.score} good answer(s)`}</Label>
           </ScoreContainer>
         </>
       )}
 
-      <TryButton onClick={() => history.push("/survey")}>Try again</TryButton>
+      <TryButton
+        data-testid="over-tryagain"
+        onClick={() => history.push("/survey")}
+      >
+        Try again
+      </TryButton>
       {results.length > 0 && <Title>Highscore</Title>}
       {results.slice(0, 10).map((r, index) => (
         <ScoreContainer key={index}>
@@ -53,6 +58,7 @@ const GameOver = () => {
               onChange={(e) => setInput(e.target.value)}
             />
             <AddButton
+              data-testid="over-add"
               disabled={input.length === 0}
               onClick={() => {
                 saveResult({ ...result, name: input });

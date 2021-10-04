@@ -69,10 +69,12 @@ const Survey = ({ data }: SurveyProps) => {
       <Title>Did this actor play in this movie?</Title>
       <PortraitContainer>
         <Portrait
+          data-testid="survey-image-actor"
           src={data[counter].actor.image}
           alt={data[counter].actor.name}
         />
         <Portrait
+          data-testid="survey-image-movie"
           src={data[counter].movie.image}
           alt={data[counter].movie.title}
         />
@@ -81,12 +83,12 @@ const Survey = ({ data }: SurveyProps) => {
         {data[counter].answer === "YES" && (
           <>
             <NoButton onClick={wrongAnswer}>No</NoButton>
-            <YesButton onClick={rightAnswer}>Yes*</YesButton>
+            <YesButton onClick={rightAnswer}>Yes</YesButton>
           </>
         )}
         {data[counter].answer === "NO" && (
           <>
-            <NoButton onClick={rightAnswer}>No*</NoButton>
+            <NoButton onClick={rightAnswer}>No</NoButton>
             <YesButton onClick={wrongAnswer}>Yes</YesButton>
           </>
         )}

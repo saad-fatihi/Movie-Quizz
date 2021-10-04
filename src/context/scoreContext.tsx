@@ -6,7 +6,7 @@ type Result = {
   name?: string;
 };
 
-type ScoreContextType = {
+export type ScoreContextType = {
   result?: Result | null;
   results: Result[];
   pushResult: (result: Result) => void;
