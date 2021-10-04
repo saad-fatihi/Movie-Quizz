@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/Movie-Quizz/static/js/main.eff38f5d.chunk.js",
+    "main.js.map": "/Movie-Quizz/static/js/main.eff38f5d.chunk.js.map",
+    "runtime-main.js": "/Movie-Quizz/static/js/runtime-main.0257c59b.js",
+    "runtime-main.js.map": "/Movie-Quizz/static/js/runtime-main.0257c59b.js.map",
+    "static/js/2.cc89f7ec.chunk.js": "/Movie-Quizz/static/js/2.cc89f7ec.chunk.js",
+    "static/js/2.cc89f7ec.chunk.js.map": "/Movie-Quizz/static/js/2.cc89f7ec.chunk.js.map",
+    "static/js/3.f3602763.chunk.js": "/Movie-Quizz/static/js/3.f3602763.chunk.js",
+    "static/js/3.f3602763.chunk.js.map": "/Movie-Quizz/static/js/3.f3602763.chunk.js.map",
+    "index.html": "/Movie-Quizz/index.html",
+    "static/js/2.cc89f7ec.chunk.js.LICENSE.txt": "/Movie-Quizz/static/js/2.cc89f7ec.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0257c59b.js",
+    "static/js/2.cc89f7ec.chunk.js",
+    "static/js/main.eff38f5d.chunk.js"
+  ]
+}
